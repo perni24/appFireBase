@@ -51,7 +51,6 @@
 
 #password{
     height: 4vh;
-    margin-bottom: 4vh;
     border-radius: 2vw;
     padding-left: 1vw;
 }
@@ -60,11 +59,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
+    transform: translateY(-20%);
 }
 
 #buttonLogin{
     height: 4.5vh;
-    width: 100%;
+    width: 60%;
     border-radius: 2vw;
     background-color: rgb(0, 114, 228);
     color: white;
@@ -74,4 +75,9 @@
 #buttonLogin:hover{
     background-color: rgb(5, 178, 236);
     cursor: pointer;
+}
+
+#containrErroreLogin span{
+    color: red;
+    font-weight: bold;
 }

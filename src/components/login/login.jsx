@@ -1,15 +1,22 @@
 import './login.css'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 
-function Login() {
-  const username = useRef();
-  const password = useRef();
+function Login({setAccesso}) {
+  const username = useRef(); // recuera contenuto dell'elemento senza possibilità di modifica
+  const password = useRef(); // recuera contenuto dell'elemento senza possibilità di modifica
+  const [showError, setShowError] = useState(false); //stato messaggio errore credenziali sbagliate
 
 
   const conrollaCredenziali = () =>{
-      
+      if(username.current.value === "admin" && password.current.value === "admin" ){
+        setShowError(false)
+        setAccesso(1)
+      }else{
+        console.log("errore")
+        setShowError(true)
+      }
   }
 
   return (
@@ -22,10 +29,14 @@ function Login() {
             <input type="text" id="username" ref={username} placeholder=''/>
             <label htmlFor="password" id="labelPassword"><FontAwesomeIcon icon={faLock}/> Password</label>
             <input type="password" id="password" ref={password} placeholder=''/>
-            <div id="containerButtonLogin">
-              <button type="submit" id="buttonLogin" onClick={conrollaCredenziali}>Login</button>
-            </div>
+            <span></span>
         </form>
+        <div id="containerButtonLogin">
+          <button type="submit" id="buttonLogin" onClick={conrollaCredenziali}>Login</button>
+        </div>
+        <div id='containrErroreLogin' style={{display : showError ? "block" : "none"}}>
+          <span>Credenziali Errate</span>
+        </div>
     </div>
     </>
   )

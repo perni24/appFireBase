@@ -6,7 +6,9 @@ function App() {
  const [accesso, setAccesso] = useState(0);
   return (
     <>
-      <Login/>
+    {
+      accesso === 0 ? <Login setAccesso = {setAccesso}/> : <span>accesso eseguito</span>
+    }  
     </>
   )
 }
