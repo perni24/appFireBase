@@ -39,6 +39,8 @@
 #username{
     height: 4vh;
     margin-bottom: 2vh;
+    border-radius: 2vw;
+    padding-left: 1vw;
 }
 
 #labelPassword{
@@ -50,6 +52,8 @@
 #password{
     height: 4vh;
     margin-bottom: 4vh;
+    border-radius: 2vw;
+    padding-left: 1vw;
 }
 
 #containerButtonLogin{
@@ -60,8 +64,8 @@
 
 #buttonLogin{
     height: 4.5vh;
-    width: 50%;
-    border-radius: 0.5vw;
+    width: 100%;
+    border-radius: 2vw;
     background-color: rgb(0, 114, 228);
     color: white;
     font-size: 2vh;
