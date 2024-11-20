@@ -1,0 +1,16 @@
+#containerHome{
+    width: 90vw;
+    height: 80vh;
+    background-color: lightgray;
+    margin-top: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.sceltaMenu{
+    width: 20vw;
+    height: 20vw;
+    background-color: gray;
+}

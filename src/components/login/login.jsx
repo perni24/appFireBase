@@ -10,11 +10,10 @@ function Login({setAccesso}) {
 
 
   const conrollaCredenziali = () =>{
-      if(username.current.value === "admin" && password.current.value === "admin" ){
-        setShowError(false)
-        setAccesso(1)
+      if(username.current.value === "admin" && password.current.value === "admin" ){ // mdificare con controllo credenziali (usare funzione che restituisce true o false)
+        setShowError(false) 
+        setAccesso(1) // valorizza uno stato del componente padre per cambio pagina
       }else{
-        console.log("errore")
         setShowError(true)
       }
   }
@@ -26,9 +25,9 @@ function Login({setAccesso}) {
         <span id="titoloLogin">Login</span>
         <form action="" id="formLogin">
             <label htmlFor="username" id="labelUsername"><FontAwesomeIcon icon={faUser}/> Username</label>
-            <input type="text" id="username" ref={username} placeholder=''/>
+            <input type="text" id="username" ref={username} placeholder='' style={{borderColor : showError ? "red" : ""}}/>
             <label htmlFor="password" id="labelPassword"><FontAwesomeIcon icon={faLock}/> Password</label>
-            <input type="password" id="password" ref={password} placeholder=''/>
+            <input type="password" id="password" ref={password} placeholder=''  style={{borderColor : showError ? "red" : ""}}/>
             <span></span>
         </form>
         <div id="containerButtonLogin">
