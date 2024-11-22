@@ -13,4 +13,9 @@
     width: 20vw;
     height: 20vw;
     background-color: gray;
+    border: 0.15vw solid black;
+    border-radius: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

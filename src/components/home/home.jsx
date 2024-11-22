@@ -11,6 +11,9 @@ function Home() {
             <div className='sceltaMenu'>
                 <span>scelta2</span>
             </div>
+            <div className='sceltaMenu'>
+                <span>scelta3</span>
+            </div>
         </div>
     </>
   )
