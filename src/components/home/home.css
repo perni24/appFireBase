@@ -2,7 +2,6 @@
     width: 90vw;
     height: 80vh;
     background-color: lightgray;
-    margin-top: 10vh;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -12,10 +11,18 @@
 .sceltaMenu{
     width: 20vw;
     height: 20vw;
-    background-color: gray;
     border: 0.15vw solid black;
-    border-radius: 2vw;
+    border-radius: 3vw;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.sceltaMenu span{
+    font-size: 3vh;
+}
+
+.sceltaMenu:hover{
+    background-color: lightgray;
 }

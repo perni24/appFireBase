@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './home.css'
 
 function Home() {
+  const [scelta, setScelta] = useState(0)
   return (
     <>
         <div id='containerHome'>
