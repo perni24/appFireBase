@@ -1,7 +1,6 @@
 #containerHome{
     width: 90vw;
     height: 80vh;
-    background-color: lightgray;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -13,7 +12,7 @@
     height: 20vw;
     border: 0.15vw solid black;
     border-radius: 3vw;
-    background-color: white;
+    background-color: rgb(230, 230, 230);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,5 +23,5 @@
 }
 
 .sceltaMenu:hover{
-    background-color: lightgray;
+    background-color: rgb(178, 178, 178);
 }
