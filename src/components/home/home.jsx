@@ -1,9 +1,10 @@
 import { useState } from "react";
 import "./home.css";
+import GestionePresenze from "../gestionePresenze/gestionePresenze";
 
 function Home() {
     // Array che contiene le voci del menu
-    const menu = ["scelta1", "scelta2", "scelta3"];
+    const menu = ["Nuova Attività", "Storico Attività", "Archivio"];
     
     // Stato per tenere traccia della scelta corrente (0 indica che nessuna scelta è stata effettuata)
     const [scelta, setScelta] = useState(0);
@@ -11,12 +12,12 @@ function Home() {
     // Funzione per rendere il contenuto dinamico basato sulla scelta corrente
     const renderContent = () => {
         switch (scelta) {
-            case "scelta1":
-                return <div className="contenuto">Contenuto per Scelta 1</div>;
-            case "scelta2":
-                return <div className="contenuto">Contenuto per Scelta 2</div>;
-            case "scelta3":
-                return <div className="contenuto">Contenuto per Scelta 3</div>;
+            case "Nuova Attività":
+                return <GestionePresenze/>;
+            case "Storico Attività":
+                return <div className="contenuto">Storico Attività</div>;
+            case "Archivio":
+                return <div className="contenuto">Archivio</div>;
             default:
                 return null; // Nessun contenuto se scelta non corrisponde a una voce valida
         }
@@ -35,11 +36,11 @@ function Home() {
             </div>
 
             {/* Contenitore del contenuto: visibile solo se una scelta è stata effettuata (scelta != 0) */}
-            <div id="contenutoScelta" style={{ display: scelta === 0 ? "none" : "" }}>
-                <div>
+            <div id="containerBackHome" style={{ display: scelta === 0 ? "none" : "" }}>
                     {/* Pulsante per tornare alla home (reset dello stato scelta a 0) */}
-                    <span onClick={() => setScelta(0)}>torna alla home</span>
-                </div>
+                    <span onClick={() => setScelta(0)}>Torna alla Home</span>
+            </div>
+            <div id="contenutoScelta" style={{ display: scelta === 0 ? "none" : "" }}>
                 {/* Chiamata alla funzione renderContent per mostrare il contenuto dinamico */}
                 {renderContent()}
             </div>

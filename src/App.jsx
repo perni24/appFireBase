@@ -8,7 +8,7 @@ function App() {
  const [accesso, setAccesso] = useState(1); // da settare a 0 e aggiungere logica per controllare se login già effettuato (localStorage)
   return (
     <>
-    <BarraStrumenti/>
+    <BarraStrumenti setAccesso = {setAccesso}/>
     {
       accesso === 0 ? <Login setAccesso = {setAccesso}/> : <Home/>
     }  

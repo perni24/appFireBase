@@ -1,6 +1,6 @@
 import './BarraStrumenti.css'
 
-function BarraStrumenti() {
+function BarraStrumenti({setAccesso}) {
   return (
     <>
         <div id='containerStrumenti'>
