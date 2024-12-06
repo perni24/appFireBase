@@ -15,3 +15,17 @@ table{
     border: 0.2vw solid black;
     margin-top: 3vh;
 }
+
+th{
+    border: 0.2vw solid black;
+}
+
+td{
+    border: 0.2vw solid black;
+}
+
+.checkbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
