@@ -1,5 +1,6 @@
 body{
     margin:0;
+    background-color: bisque;
 }
 
 #root{
@@ -8,5 +9,4 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }

@@ -1,31 +1,40 @@
 #containerApp{
     width: 100%;
+    max-height: 100%;
+    overflow-y: auto; 
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#containerTabella{
-    width: 50vw;
-    border: 0.2vw solid black;
+#selectClasse{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-size: large;
 }
 
-table{
-    width: 50%;
-    border: 0.2vw solid black;
-    margin-top: 3vh;
+table {
+    border-collapse: collapse;
+    width: 50%; 
+    font-size: x-large;
 }
-
-th{
-    border: 0.2vw solid black;
-}
-
-td{
-    border: 0.2vw solid black;
+  
+tr,td,th {
+    border: 0.1vw solid black;
+    padding: 0.5vw; 
+    text-align: left;
 }
 
 .checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center; 
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
+td > button{
+    border-radius: 0.5vw;
+    font-size: large;
+    width: 15%;
 }
