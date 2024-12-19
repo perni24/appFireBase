@@ -8,6 +8,16 @@
     align-items: center;
 }
 
+#containerApp select{
+    padding: 1vh;
+    border-radius: 1vw;
+    font-weight: bold;
+}
+
+#containerApp select{
+    text-transform: capitalize;
+}
+
 #selectClasse{
     margin-top: 1vh;
     margin-bottom: 1vh;

@@ -36,6 +36,7 @@
 #containerBackHome span{
     text-decoration: underline;
     font-size: large;
+    font-weight: bold;
 }
 
 #contenutoScelta{
